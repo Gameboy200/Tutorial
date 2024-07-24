@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://ARIALBD.TTF"
+
+[sub_resource type="DynamicFont" id=2]
+size = 150
+font_data = SubResource( 1 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+margin_right = 577.0
+margin_bottom = 1026.0
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+margin_right = 573.0
+margin_bottom = 1023.0
+color = Color( 0.298039, 0.709804, 0.933333, 1 )
+
+[node name="Label" type="Label" parent="Control/ColorRect"]
+margin_left = 213.0
+margin_top = 401.0
+margin_right = 351.0
+margin_bottom = 569.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "hi"
